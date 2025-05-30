@@ -2,6 +2,7 @@
 
 import { useEffect } from "react"
 import Head from "next/head"
+import Image from "next/image"
 
 export default function Resume() {
   useEffect(() => {
@@ -67,7 +68,15 @@ export default function Resume() {
         {/* LEFT SIDEBAR */}
         <div className="sidebar">
           <div className="profile-section">
-            <div className="profile-img">👤</div>
+            <div className="profile-img">
+              <Image
+                src="/image.jpeg"
+                alt="Boniface Mwema"
+                width={100}
+                height={100}
+                style={{ objectFit: "cover", borderRadius: "50%" }}
+              />
+            </div>
             <div className="name">
               BONIFACE
               <br />
@@ -92,15 +101,15 @@ export default function Resume() {
           <div className="sidebar-section">
             <h3>Links</h3>
             <p>
-              <a href="#" target="_blank" rel="noreferrer">
+              <a href="https://techbite-portfolio.vercel.app/" target="_blank" rel="noreferrer">
                 My Portfolio
               </a>
               <br />
-              <a href="#" target="_blank" rel="noreferrer">
+              <a href="https://www.linkedin.com/in/bonfacemwema7/" target="_blank" rel="noreferrer">
                 LinkedIn
               </a>
               <br />
-              <a href="#" target="_blank" rel="noreferrer">
+              <a href="https://github.com/Techbite-sudo" target="_blank" rel="noreferrer">
                 Github
               </a>
             </p>
@@ -120,6 +129,13 @@ export default function Resume() {
               <li>Collaboration</li>
               <li>Linux</li>
               <li>PostgreSQL</li>
+              <li>MongoDB</li>
+              <li>Docker</li>
+              <li>RabbitMQ,Redis pub/sub</li>
+              <li>CI/CD</li>
+              <li>AWS</li>
+              <li>Firebase</li>
+              <li>Coolify</li>
               <li>Golang</li>
               <li>GraphQL APIs</li>
               <li>Rest APIs</li>
@@ -158,33 +174,52 @@ export default function Resume() {
             <div className="job-entry">
               <div className="job-header">
                 <div className="job-title">
-                  <h3>Backend Developer, StatsSpeak Limited Company</h3>
+                  <h3>Backend Developer, Ibibe Games</h3>
                   <div className="job-company">Nairobi</div>
                 </div>
-                <div className="job-dates">JUNE 2024 — PRESENT</div>
+                <div className="job-dates">MARCH 2024 — PRESENT</div>
               </div>
               <div className="job-description">
                 <ul>
-                  <li>
-                    Built a book-sharing platform: Designed and developed the "Readmasters" platform, enabling students
-                    from registered schools to access a vast library of books without the need for purchase, fostering a
-                    collaborative reading environment.
-                  </li>
-                  <li>
-                    Developed a scalable e-commerce backend: Created a RESTful API as the backend for the Nyumbani
-                    Greens e-commerce application, significantly enhancing scalability and reducing latency, improving
-                    the user experience and operational efficiency.
-                  </li>
-                  <li>
-                    Led website development for Statspeak: Developed and maintained the Statspeak website, ensuring a
-                    seamless user experience, optimized performance, and increased traffic for the company's online
-                    presence.
-                  </li>
-                  <li>
-                    Creating an HPV care management system: Currently developing a comprehensive health system to assist
-                    HPV patients in receiving timely, appropriate care and managing their health more effectively
-                    through advanced tracking and care coordination features.
-                  </li>
+                  <li>Developing and maintaining backend game servers using Golang for 7+ games, focusing on scalable APIs and robust game logic.</li>
+                  <li>Collaborating with game designers and frontend developers to ensure seamless integration and optimal performance.</li>
+                  <li>Recently assigned to develop the frontend for Credit Cycle Solution, a sophisticated debt collection and credit management platform designed to maximize profit for clients, provide affordable credit to customers, and reduce credit risks for all parties.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="job-entry">
+              <div className="job-header">
+                <div className="job-title">
+                  <h3>Contract Backend Developer , Nuvemite Technologies (Deployed at Unga Limited as ICT Consultant)</h3>
+                  <div className="job-company">Nairobi</div>
+                </div>
+                <div className="job-dates">JANUARY 2024 — MARCH 2024</div>
+              </div>
+              <div className="job-description">
+                <ul>
+                  <li>Automated customer order processing for Unga Limited using Microsoft Power Automate, enabling major clients (e.g., Naivas, Quickmart) to place orders via email, which were then analyzed and posted directly into the SAP system.</li>
+                  <li>Developed powerful scripts to automate previously manual business processes, increasing efficiency and reducing errors.</li>
+                  <li>Worked closely with the ICT team to identify automation opportunities and implement robust solutions.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="job-entry">
+              <div className="job-header">
+                <div className="job-title">
+                  <h3>Backend Developer, StatsSpeak Limited Company</h3>
+                  <div className="job-company">Nairobi</div>
+                </div>
+                <div className="job-dates">JUNE 2023 — JANUARY 2024</div>
+              </div>
+              <div className="job-description">
+                <ul>
+                  <li>Built a book-sharing platform: Designed and developed the "Readmasters" platform, enabling students from registered schools to access a vast library of books without the need for purchase, fostering a collaborative reading environment.</li>
+                  <li>Developed a scalable e-commerce backend: Created a RESTful API as the backend for the Nyumbani Greens e-commerce application, significantly enhancing scalability and reducing latency, improving the user experience and operational efficiency.</li>
+                  <li>Led website development for Statspeak: Developed and maintained the Statspeak website, ensuring a seamless user experience, optimized performance, and increased traffic for the company's online presence.</li>
+                  <li>Created an HPV care management system: Developed a comprehensive health system to assist HPV patients in receiving timely, appropriate care and managing their health more effectively through advanced tracking and care coordination features.</li>
+                  <li>Left for a better offer at Nuvemite Technologies.</li>
                 </ul>
               </div>
             </div>
@@ -324,6 +359,21 @@ export default function Resume() {
                   <a href="mailto:favorryo@gmail.com">favorryo@gmail.com</a>
                 </p>
                 <p>+254-715-061189</p>
+              </div>
+              <div className="reference">
+                <h4>Colman Kangethe</h4>
+                <p>CEO, Nuvemite Technologies</p>
+                <p>+254712984364</p>
+              </div>
+              <div className="reference">
+                <h4>Emmanuel Kimathi</h4>
+                <p>ICT Officer, Unga Limited</p>
+                <p>+254739441915</p>
+              </div>
+              <div className="reference">
+                <h4>Joe Kiruja</h4>
+                <p>CEO, Ibibe Games</p>
+                <p>+254721804390</p>
               </div>
             </div>
           </div>
