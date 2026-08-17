@@ -101,7 +101,7 @@ export default function Resume() {
           <div className="sidebar-section">
             <h3>Links</h3>
             <p>
-              <a href="https://mwema.techbiteventures.com/" target="_blank" rel="noreferrer">
+              <a href="https://techbite-portfolio.vercel.app/" target="_blank" rel="noreferrer">
                 My Portfolio
               </a>
               <br />
@@ -118,18 +118,6 @@ export default function Resume() {
           <div className="sidebar-section">
             <h3>Skills</h3>
             <ul className="skills-list">
-              <li>LLM Orchestration</li>
-              <li>Function Calling / Tool-Use</li>
-              <li>Prompt Engineering</li>
-              <li>Structured Output (JSON)</li>
-              <li>Retrieval / Knowledge Bases</li>
-              <li>Conversational Memory & State</li>
-              <li>Human-in-the-Loop Handoff</li>
-              <li>FastAPI</li>
-              <li>TypeScript</li>
-              <li>AWS EC2</li>
-              <li>nginx / systemd</li>
-              <li>Linux Server Admin</li>
               <li>MySQL</li>
               <li>HTML & CSS</li>
               <li>SQL</li>
@@ -172,7 +160,9 @@ export default function Resume() {
             <div className="profile-summary">
               <h3>Professional Summary</h3>
               <p>
-                Results-driven software engineer skilled in production AI systems and full-stack web/mobile development. Expert in LLM orchestration, function calling, retrieval, FastAPI, Golang, Next.js, React, GraphQL, and RESTful APIs. Builds, deploys, and operates conversational AI assistants for real clients on AWS, alongside scalable gaming backends and mobile solutions. Seeking impactful projects and collaborative teams.
+                Results-driven developer skilled in web and mobile apps. Expert in JavaScript, Next.js, React, Golang,
+                graphQL APIs, Restfull APIs, and innovative mobile solutions. Seeking impactful projects and
+                collaborative teams.
               </p>
             </div>
           </div>
@@ -180,28 +170,6 @@ export default function Resume() {
           {/* EMPLOYMENT HISTORY */}
           <div className="section">
             <h2>Employment History</h2>
-
-            <div className="job-entry">
-              <div className="job-header">
-                <div className="job-title">
-                  <h3>AI Engineer Consultant, Bonga Nasi</h3>
-                  <div className="job-company">Nairobi</div>
-                </div>
-                <div className="job-dates">APRIL 2026 — PRESENT</div>
-              </div>
-              <div className="job-description">
-                <ul>
-                  <li>Builds, deploys, and operates production conversational AI systems for real clients — full-stack delivery covering LLM orchestration, tool-use, retrieval, and human-in-the-loop handoff, shipped on AWS for an insurance firm (AMACO) and an electrical/mechanical products supplier (Electric Link).</li>
-                  <li>Designed and shipped Amani, a conversational insurance-quotation assistant (FastAPI + LLM) that turns free-text requests into structured, priced quotes across motor, fire, and IAR products for a licensed insurer.</li>
-                  <li>Built an LLM function-calling pipeline that parses natural-language intent into JSON and routes it to a deterministic premium-calculation engine — guaranteeing accurate, auditable numbers.</li>
-                  <li>Added stateful multi-turn memory (session-scoped, survives page reloads) plus human-in-the-loop handoff to a voice call router via Africa's Talking API.</li>
-                  <li>Automated the full document flow: server-side PDF generation with brand-accurate rendering and automated email delivery to customers.</li>
-                  <li>Designed and shipped Elia, a customer-facing AI assistant for Electric Link Pan Africa that answers product questions over a 193-product knowledge base (custom tokenized inverted-index retrieval) and captures sales leads (name/email → inquiry email to sales).</li>
-                  <li>Built an analytics dashboard for live conversation monitoring and demand tracking.</li>
-                  <li>Deployed and operated everything on AWS EC2 + nginx + systemd + PostgreSQL, including the customer-facing Next.js / TypeScript chat widgets.</li>
-                </ul>
-              </div>
-            </div>
 
             <div className="job-entry">
               <div className="job-header">
